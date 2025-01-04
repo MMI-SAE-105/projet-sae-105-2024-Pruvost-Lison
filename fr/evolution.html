@@ -12,6 +12,110 @@
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 </head>
 <body>
-    
+    <header class="header">
+        <div class="menu">
+            <div class="logo">
+                <a href="index.html"><img src="/assets/img/nextwear.webp" alt="Logo NextWear"></a>
+            </div>
+            <button id="btnmenu" class="menu-toggle" aria-expanded="false" aria-controls="panel"
+                aria-label="Ouvrir le menu"></button>
+        </div>
+        <div class="deco"></div>
+    </header>
+    <aside id="panel">
+        <div class="panel-header">
+            <button class="btnclose" id="hide-menu">
+            </button>
+        </div>
+        <nav role="navigation">
+            <ul>
+                <li><a href="filmographie.html">filmographie</a></li>
+                <li><a href="evolution.html">Evolution</a></li>
+                <li><a href="robert_zemeckis.html">Robert Zemeckis</a></li>
+                <li><a href="techno_fashion.html">Techno Fashion</a></li>
+                <li><a href="xg_grlgvng.html">XG-Grl-Gvng</a></li>
+                <li><a href="a_propos.html">à propos</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main">
+        <section class="hero">
+            <img src="/assets/img/hero_evolution.webp" alt="Un design futuriste représentant l'évolution de la mode"
+                class="hero__image">
+            <h1 class="hero__title">Évolution</h1>
+        </section>
+        <section class="article">
+            <h3 class="article__title">La mode futuriste qui façonne notre style</h3>
+            <div class="article__content">
+                <p>
+                    Aujourd'hui, l'innovation dans la mode se concentre sur les matériaux intelligents, les designs futuristes,
+                    et la fusion de la technologie avec l'esthétique. Voici quelques tendances importantes :
+                </p>
+                <ul>
+                    <li>Les vêtements connectés permettant un suivi en temps réel.</li>
+                    <li>Des tissus intelligents capables de changer de couleur ou de température.</li>
+                    <li>La personnalisation avancée grâce à l'impression 3D.</li>
+                </ul>
+            </div>
+            <div class="article__images">
+                <img src="path_to_image_1.jpg" alt="Vêtement futuriste 1" class="article__image">
+                <img src="path_to_image_2.jpg" alt="Vêtement futuriste 2" class="article__image">
+            </div>
+        </section>
+        
+        <section class="timeline">
+            <h3 class="timeline__title">Du Corset à l'Avancer : La Mode à Travers les Âges</h3>
+            <div class="timeline__content">
+                <div class="timeline__item">
+                    <p class="timeline__date">Années 1700</p>
+                    <img src="path_to_image_corset.jpg" alt="Mode des années 1700" class="timeline__image">
+                    <p class="timeline__description">Les corsets régnaient en maître...</p>
+                </div>
+        
+                <div class="timeline__item">
+                    <p class="timeline__date">Années 1800</p>
+                    <img src="path_to_image_1800s.jpg" alt="Mode des années 1800" class="timeline__image">
+                    <p class="timeline__description">Introduction des crinolines...</p>
+                </div>
+        
+                <div class="timeline__item">
+                    <p class="timeline__date">Années 1900</p>
+                    <img src="path_to_image_1900s.jpg" alt="Mode des années 1900" class="timeline__image">
+                    <p class="timeline__description">L'élégance était au premier plan...</p>
+                </div>
+        
+                <!-- Ajouter plus d'étapes similaires -->
+            </div>
+        </section>
+        </main>
+
+<footer class="footer">
+    <div class="footer-pixel"></div>
+    <div class="footer-logo">
+        <img src="/assets/img/footer_pixel.svg" alt="">
+    </div>
+    <div class="footer-menu">
+        <h4>MENU</h4>
+        <div>
+            <a href="a_propos.html">a</a> <br>
+            <a href="contacts.html">Contact</a> <br>
+            <small>lison.pruvost@edu.univ-fcomte.fr</small> <br>
+            <a href="glossaire.html">glossaire</a> <br>
+            <a href="#">Mentions Légales</a> <br>
+            <small>©Projet réalisé en 2024 dans le cadre d’un exercice
+                pédagogique au département MMi de Montbéliard</small>
+        </div>
+    </div>
+    <div class="footer-social">
+        <h4>NOUS SUIVRE</h4>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/"><img src="/assets/img/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/lison-pruvost-1b6b41328/"><img src="/assets/img/linkedin.svg"
+                    alt="linkedin"></a>
+            <a href="https://www.facebook.com/"><img src="/assets/img/facebook.svg" alt="Facebook"></a>
+        </div>
+    </div>
+</footer>
+<script src="/src/js/app.js"> </script>
 </body>
 </html>
