@@ -1,0 +1,13 @@
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero__title {
+    font-size: 55px;
+    color: var(--green);
+}
+
+.hero__title-highlight {
+    color: #333;
+}

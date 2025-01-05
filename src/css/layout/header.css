@@ -1,0 +1,29 @@
+header.header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 86px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+.logo {
+    max-width: 150px;
+    /* Ajustez cette valeur selon la taille souhaitée */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
