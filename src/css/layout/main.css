@@ -45,6 +45,12 @@ ol {
     /* Gère les débordements */
 }
 
+h2 {
+    font-size: 29px;
+    text-transform: uppercase;
+    /* color: var(--purple); */
+}
+
 /* Pas de marge ou padding pour le hero */
 .hero {
     margin: 0;
@@ -64,4 +70,16 @@ small:not(.footer small) {
     text-align: center;
     margin: 10px auto;
     width: fit-content;
+}
+/* body {
+    padding-bottom: 50px;
+    /* Ajoute 50px d'espace en bas */
+
+.card .bg-bleu{
+    margin-right: -20px;
+    margin-left: 40px;
+}
+
+img.full-width{
+    margin-inline: -20px;
 }

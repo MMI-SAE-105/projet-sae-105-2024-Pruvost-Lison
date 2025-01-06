@@ -1,14 +1,9 @@
 /* Conteneur du carrousel */
 .caroussel {
     position: relative;
-    /* Nécessaire pour positionner les boutons par rapport à lui */
     width: 100%;
     height: 332px;
-    /* Hauteur du carrousel */
-    background-color: #f0f0f0;
-    /* Fond gris clair pour mieux voir le carrousel */
     overflow: hidden;
-    /* Empêche le débordement des images */
 }
 
 /* Conteneur pour les images */
@@ -19,66 +14,57 @@
 .wrapper {
     display: flex;
     transition: transform 0.5s ease;
+    gap: 20px;
+    /* Espacement de 20px entre les éléments */
 }
 
 .element {
-    flex: 0 0 100%;
-    height: 332px;
-    /* Hauteur de l'image */
+    flex: 0 0 auto;
+    /* Ajuste la taille de l'élément en fonction de son contenu */
+    height: 340px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Images ajustées sans être coupées */
 .element img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 340px;
+    object-fit: contain;
 }
 
 /* Positionnement des boutons sur le carrousel */
 .flex {
     position: absolute;
     top: 50%;
-    /* Centrer les boutons verticalement par rapport au carrousel */
     left: 10px;
-    /* Décalage des boutons du côté gauche */
     right: 10px;
-    /* Décalage des boutons du côté droit */
     display: flex;
     justify-content: space-between;
-    /* Espacement égal entre les boutons */
     transform: translateY(-50%);
-    /* Centrer verticalement */
     z-index: 2;
-    /* Assurer que les boutons sont au-dessus des images */
 }
 
 .navBtn {
     background-color: var(--green);
-    /* Couleur de fond des boutons */
     color: white;
-    border: 2px solid darkgreen;
-    /* Bordure verte autour du bouton */
     border-radius: 50%;
-    /* Rendre les boutons ronds */
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    /* Taille des flèches */
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navBtn:hover {
-    background-color: darkgreen;
-    /* Changer la couleur au survol */
+    background-color: var(--dark_blue);
+    color: var(--green);
 }
 
 .navBtn:focus {
     outline: none;
-    /* Enlever le contour au focus */
 }
