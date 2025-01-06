@@ -1,6 +1,5 @@
 .hero {
     text-align: center;
-    padding: 40px 20px;
 }
 
 .hero__title {
@@ -11,3 +10,14 @@
 .hero__title-highlight {
     color: #333;
 }
+
+.hero {
+    position: relative;
+    margin-top: 56px;
+}
+
+.bloc-img {
+        width: 100vw;
+        height: 474px;
+        overflow: hidden;
+    }

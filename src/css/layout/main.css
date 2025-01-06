@@ -16,3 +16,27 @@ button {
     border: none;
     cursor: pointer;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Limite la largeur des images à 390px (dimension max d'un iPhone 15) sauf carrousel et hero */
+img:not(.carrousel img):not(.hero img) :not(.menu img){
+    max-width: 390px;
+    width: 100%;
+    /* Cela permet à l'image de s'adapter à son conteneur sans déborder */
+}
+
+/* Appliquer une marge de 20px sur toutes les pages */
+body {
+    margin: 0 20px;
+    /* Marges à gauche et à droite */
+}
+
+/* Enlever la marge pour le hero */
+.hero {
+    margin: 0;
+    /* Pas de marge autour du hero */
+}

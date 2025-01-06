@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,26 +15,38 @@
     <header class="header">
         <div class="menu">
             <div class="logo">
-                <a href="index.html"><img src="/assets/img/nextwear.webp" alt="Logo NextWear"></a>
+                <a href="index.html">
+                    <img src="/assets/img/nextwear.webp" alt="Logo NextWear">
+                </a>
             </div>
+    
+            <nav class="header__nav" aria-label="Menu principal">
+                <a href="home.html" class="header__lang" aria-label="Changer la langue">
+                    <img src="/assets/img/label-en.svg" alt="EN" width="24" height="24">
+                </a>
+            </nav>
+    
             <button id="btnmenu" class="menu-toggle" aria-expanded="false" aria-controls="panel"
-                aria-label="Ouvrir le menu"></button>
-        </div>
-        <div class="deco"></div>
-    </header>
-    <aside id="panel">
-        <div class="panel-header">
-            <button class="btnclose" id="hide-menu">
+                aria-label="Ouvrir le menu">
+                <img src="/assets/img/menu.svg" alt="">
             </button>
         </div>
-        <nav role="navigation">
+    </header>
+    
+    <aside id="panel" class="menu-panel" aria-hidden="true">
+        <div class="panel-header">
+            <button class="btnclose" id="hide-menu" aria-label="Fermer le menu">
+                <img src="/assets/img/close_square.svg" alt="">
+            </button>
+        </div>
+        <nav role="navigation" class="menu-panel__nav">
             <ul>
-                <li><a href="filmographie.html">filmographie</a></li>
+                <li><a href="filmographie.html">Filmographie</a></li>
                 <li><a href="evolution.html">Evolution</a></li>
                 <li><a href="robert_zemeckis.html">Robert Zemeckis</a></li>
                 <li><a href="techno_fashion.html">Techno Fashion</a></li>
                 <li><a href="xg_grlgvng.html">XG-Grl-Gvng</a></li>
-                <li><a href="a_propos.html">à propos</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
             </ul>
         </nav>
     </aside>
