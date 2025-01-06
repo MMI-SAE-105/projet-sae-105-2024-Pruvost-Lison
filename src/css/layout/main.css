@@ -2,8 +2,8 @@ body {
     padding-top: 86px;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    color: --black;
+    padding: 20px 0;
+    color: var(--black);
 }
 
 a {
@@ -26,17 +26,42 @@ img {
 img:not(.carrousel img):not(.hero img) :not(.menu img) {
     max-width: 390px;
     width: 100%;
-    /* Cela permet à l'image de s'adapter à son conteneur sans déborder */
 }
 
-/* Appliquer une marge de 20px sur toutes les pages */
-body {
-    margin: 0 20px;
-    /* Marges à gauche et à droite */
+/* Texte : Padding de 20px */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    /* Gère les débordements */
 }
 
-/* Enlever la marge pour le hero */
+/* Pas de marge ou padding pour le hero */
 .hero {
     margin: 0;
-    /* Pas de marge autour du hero */
+    padding: 0;
+}
+
+/* Cible spécifique : Vidéo dans la galerie */
+.gallery__item video {
+    max-width: 390px;
+    width: 100%;
+    height: auto;
+    margin: 0 20px;
+}
+
+small:not(.footer small) {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    width: fit-content;
 }

@@ -57,8 +57,6 @@ h2 {
     font-family: "Poppins", system-ui;
     font-weight: 400;
     font-style: normal;
-
-    /* text-transform: uppercase; */
 }
 
 h2 {
@@ -91,17 +89,9 @@ p {
 
 /*classes de couleurs du theme pour certains blocs*/
 .bg-bleu {
-    background-color: var(--bleu);
-}
-
-.bg-bleu-hero {
-    background-color: var(--bleu-hero);
+    background-color: var(--dark_blue);
 }
 
 .bg-rose {
-    background-color: var(--rose);
-}
-
-.bg-jaune {
-    background-color: var(--jaune);
+    background-color: var(--green);
 }
