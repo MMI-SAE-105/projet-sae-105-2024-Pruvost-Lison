@@ -1,85 +1,40 @@
-.timeline {
-    position: relative;
-    padding: 50px 0;
-}
+.bloc-timeline {
+    display: grid;
+    grid-template-columns: 1fr 90px 1fr;
+    grid-template-rows: repeat(13, 400px);
 
-.timeline__content {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+    & .bloc-img {
+        display: grid;
+        place-items: center;
+    }
 
-.timeline__content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100px;
-    /* Ajustez cette valeur selon la largeur de votre image */
-    height: 100%;
-    background: url('/assets/img/frise_barre.webp') repeat-y center;
-    transform: translateX(-50%);
-    z-index: -1;
-}
+    & .bloc-date {
+        display: grid;
+        place-items: center;
+        background-color: var(--dark_blue);
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--green);
 
-.timeline__item {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 55%;
-    /* Augmenté pour plus d'écart */
-    position: relative;
-    margin-bottom: 50px;
-    width: 100%;
-}
+        &.top {
+            background: url(../../../assets/img/pixel_top_timeline.svg), var(--dark_blue);
+            background-size: contain;
+            background-position-y: top;
+            background-repeat: no-repeat;
+        }
 
-.timeline__item:nth-child(even) {
-    justify-content: flex-start;
-    padding-left: 55%;
-    /* Augmenté pour plus d'écart */
-}
+        &.bottom {
+            background: url(../../../assets/img/pixel_bottom_timeline.svg), var(--dark_blue);
+            background-size: contain;
+            background-position-y: bottom;
+            background-repeat: no-repeat;
+        }
+    }
 
-.timeline__date {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 15px;
-    /* Augmentez cette valeur pour plus d'espace */
-}
-
-.timeline__item:nth-child(odd) .timeline__content {
-    text-align: right;
-}
-
-.timeline__item:nth-child(even) .timeline__content {
-    text-align: left;
-}
-
-
-.timeline__item:nth-child(even) {
-    justify-content: flex-start;
-    padding-left: 55%;
-    /* Écart entre les éléments */
-    padding-right: 0;
-}
-
-.timeline__image {
-    width: 150px;
-    /* Définissez la largeur spécifique souhaitée */
-    height: 150px;
-    /* Conserve les proportions de l'image */
-    margin: 20px;
-    /* Marge autour des images */
-}
-
-/* Couleur des chiffres dans h2 */
-.timeline__item h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    width: 100px;
-    /* Ajustez selon la largeur de vos chiffres */
-    color: var(--green);
-    /* Utilisation de la variable CSS pour la couleur */
+    & .bloc-text {
+        display: grid;
+        place-items: center;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
 }

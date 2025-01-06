@@ -15,12 +15,32 @@
     height: auto;
 }
 
-.anim-hero {
+.bloc-hero {
 position: relative;
-    & .bloc-title{
+z-index: 1;
+    & .bloc-center{
         position: absolute;
+        z-index: 2;
         inset: 0;
         display: grid;
         place-items: center;
+        & .bloc-title{
+            text-align: center;
+        }
+        & .hero-button{
+        height: 40px;
+        border-radius: 20px;
+         border:2px solid white;
+         color: white; 
+         text-transform: uppercase;
+         padding-inline: 20px;
+         padding-top: 5px;
+         margin-top: 50px;  
+        }
+        & img{
+            padding-top: 300px;
+            width : 90%;
+            height: auto;
+        }
     }
 }
