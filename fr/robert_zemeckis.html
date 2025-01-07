@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>robertzemeckis</title>
     <link rel="stylesheet" href="/src/css/vendors/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png" sizes="96x96" />
     <!-- <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" /> -->
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
@@ -56,7 +58,7 @@
         <div class="bloc-hero">
             <div class="bloc-center">
                 <div class="bloc-title">
-                    <img src="/assets/img/filmographie.svg" alt="robert zemeckis"></img>
+                    <img class="animate__animated animate__fadeIn" src="/assets/img/filmographie.svg" alt="robert zemeckis"></img>
                 </div>
             </div>
             <img class="darkest-1" src="/assets/img/hero_robert_zemeckis.webp" alt="photo de robert zemeckis"></img>
@@ -67,7 +69,7 @@
 
 <div class="global-content">
     <section class="intro">
-        <h2>Un Visionnaire du Cinéma et de la Technologie</h2>
+        <h2>Visionnaire du Cinéma et de la Technologie</h2>
         <small>Rédiger le 17 Octobre 2024 <br>Temps de lecture 5 min</small>
         <p>Cinéaste visionnaire, Robert Zemeckis révolutionne le cinéma avec des techniques innovantes et des films
             cultes</p>
@@ -89,19 +91,21 @@
             Il imagine des vêtements auto-ajustables, prédisant les tissus intelligents d'aujourd'hui. Les baskets à
             laçage
             automatique de Marty McFly ont inspiré Nike à créer un modèle réel en 2016.</p>
-        <div class="caroussel">
-            <div class="container caroussel x-scroll x-mandatory">
-                <ul class="wrapper">
-                    <li class="element"><img src="/assets/img/carou_voiture.webp" alt=""></li>
-                    <li class="element"><img src="/assets/img/carou_chaussure.webp" alt=""></li>
-                    <li class="element"><img src="/assets/video/gif_marthy.gif" alt=""></li>
-                </ul>
-            </div>
-        </div>
-        <div class="flex justify-between">
-            <button id="prevBtn"></button>
-            <button id="nextBtn"></button>
-        </div>
+
+<!-- swiper -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="portrait" src="/assets/img/carou_voiture.webp" alt=""></div>
+        <div class="swiper-slide"><img class="portrait" src="/assets/img/carou_chaussure.webp" alt=""></div>
+        <div class="swiper-slide"><img src="/assets/img/gif_marthy.gif" alt=""></div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<!-- swiper -->
     </section>
     <section>
         <p>Les tenues aux couleurs vives et aux formes exagérées dans le film reflètent une vision audacieuse de l'évolution de la
@@ -135,19 +139,21 @@
         <p>Plus récemment, Zemeckis a alterné entre projets ambitieux comme "Alliés" (2016) et retours aux sources avec "Bienvenue
         à Marwen" (2018). Son dernier film en date, "Sacrées Sorcières" (2020), montre qu'il n'a rien perdu de son talent pour
         mêler effets spéciaux et narration captivante.</p>
-        <div class="caroussel">
-            <div class="container caroussel x-scroll x-mandatory">
-                <ul class="wrapper">
-                    <li class="element"><img src="/assets/img/affiche_sacrees_sorciere.webp" alt=""></li>
-                    <li class="element"><img src="/assets/img/affiche_allies.webp" alt=""></li>
-                    <li class="element"><img src="/assets/img/affiche_marwen.webp" alt=""></li>
-                </ul>
-            </div>
-        </div>
-        <div class="flex justify-between">
-            <button id="prevBtn"></button>
-            <button id="nextBtn"></button>
-        </div>
+
+<!-- swiper -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="portrait" src="/assets/img/affiche_sacrees_sorciere.webp" alt=""></div>
+        <div class="swiper-slide"><img class="portrait" src="/assets/img/affiche_allies.webp" alt=""></div>
+        <div class="swiper-slide"><img class="portrait" src="/assets/img/affiche_marwen.webp" alt=""></div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<!-- swiper -->
         <p>L'influence de Zemeckis sur le cinéma contemporain est indéniable, tout comme son impact indirect sur la mode
         futuriste.Pour les passionnés de techwear et de mode avant-gardiste, l'œuvre de Zemeckis reste une source d'inspiration
         inépuisable, montrant comment l'imagination d'aujourd'hui peut façonner la réalité de demain.</p>
@@ -183,5 +189,25 @@
     </div>
 </footer>
 <script src="/src/js/app.js"> </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 </body>
 </html>

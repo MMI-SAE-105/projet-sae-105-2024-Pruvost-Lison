@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>evolution</title>
     <link rel="stylesheet" href="/src/css/vendors/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png" sizes="96x96" />
     <!-- <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" /> -->
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
@@ -55,7 +57,7 @@
         <div class="bloc-hero">
             <div class="bloc-center">
                 <div class="bloc-title">
-                    <img src="/assets/img/evolution.svg" alt="evolution"></img>
+                    <img class="animate__animated animate__fadeIn" src="/assets/img/evolution.svg" alt="evolution"></img>
                 </div>
             </div>
             <img class="darkest-1" src="/assets/img/hero_evolution.webp" alt="doloriane de retour vers le futur"></img>
@@ -88,21 +90,22 @@
         <h3>Mode durable et innovante</h3>*
         <p>La mode virtuelle offrira une expérimentation écologique, sans impact environnemental, permettant des styles auparavant
         inimaginables.</p>
-        <div class="caroussel">
-            <div class="container caroussel x-scroll x-mandatory">
-                <ul class="wrapper">
-                    <li class="element"><img src="/assets/img/carou_tenu_un.webp" alt=""></li>
-                    <li class="element"><img src="/assets/img/carou_tenu_deux.webp" alt=""></li>
-                    <li class="element"><img src="/assets/img/carou_tenu_trois.webp" alt=""></li>
-                    <li class="element"><img src="/assets/img/carou_tenu_quatre.webp" alt=""></li>
-                    <li class="element"><img src="/assets/img/carou_tenu_cinq.webp" alt=""></li>
-                </ul>
+        <!-- swiper -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="portrait" src="/assets/img/carou_tenu_un.webp" alt=""></div>
+                    <div class="swiper-slide"><img class="portrait" src="/assets/img/carou_tenu_deux.webp" alt=""></div>
+                    <div class="swiper-slide"><img class="portrait" src="/assets/img/carou_tenu_trois.webp" alt=""></div>
+                    <div class="swiper-slide"><img class="portrait" src="/assets/img/carou_tenu_quatre.webp" alt=""></div>
+                    <div class="swiper-slide"><img class="portrait" src="/assets/img/carou_tenu_cinq.webp" alt=""></div>
+                    
+                </div>
+            
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-        </div>
-        <div class="flex justify-between">
-            <button id="prevBtn"></button>
-            <button id="nextBtn"></button>
-        </div>
+        <!-- swiper -->
         <p>Le monde virtuel libérera une créativité sans limites. Les designers concevront des pièces impossibles : robes
         lumineuses, costumes émotionnels, accessoires interactifs.
         </p>
@@ -222,5 +225,25 @@
     </div>
 </footer>
 <script src="/src/js/app.js"> </script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
