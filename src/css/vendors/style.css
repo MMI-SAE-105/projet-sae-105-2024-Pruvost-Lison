@@ -71,6 +71,12 @@ h2 {
     }
 }
 
+h3 {
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--purple);
+}
+
 a {
     color: var(--header-color);
 
@@ -97,7 +103,7 @@ p {
     background-color: var(--dark_blue);
 }
 
-.bg-rose {
+.bg-vert {
     background-color: var(--green);
 }
 
