@@ -74,13 +74,49 @@ small:not(.footer small) {
     padding-bottom: 50px;
     /* Ajoute 50px d'espace en bas */
 
-.card .bg-bleu{
-    margin-right: -20px;
-    margin-left: 40px;
+.card.decal{
+    padding: 0 0 100px 0;
+    /* margin-right: -20px;
+    margin-left: 40px; */
+                background: url(../../../assets/img/bg_card_decal.svg);
+                    background-size: contain;
+                    background-position: 100% 91%;
+                    background-repeat: no-repeat;
+    & p{
+        margin-top: -5px;
+        padding-top: 20px;
+        margin-bottom: 0;
+        color: white;
+        padding-bottom: 20px;
+    }
+    & span:has(.button){
+        padding-bottom: 10px;
+    }
+    & a.button {
+        height: 40px;
+            font-size: 13px;
+            border-radius: 20px;
+            border: 2px solid var(--green);
+            color:var(--green);
+            text-transform: uppercase;
+            padding-inline: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 50px;
+    }
 }
 
+.to-left {
+        margin-right: 20px;
+    }
+.to-right {
+        margin-left: 20px;
+    }
+
+
 img.full-width{
-    margin-inline: -20px;
+    margin-left: -20px;
+    margin-right: 0;
 }
 
 .img-responsive {

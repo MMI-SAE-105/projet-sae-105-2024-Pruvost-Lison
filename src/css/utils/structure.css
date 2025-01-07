@@ -88,6 +88,11 @@
     padding-top: 20px;
 }
 
+.px-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .pb-1 {
     padding-bottom: 20px;
 }
@@ -101,6 +106,11 @@
 }
 
 .pr-2 {
+    padding-right: 40px;
+}
+
+.px-2 {
+    padding-left: 40px;
     padding-right: 40px;
 }
 
