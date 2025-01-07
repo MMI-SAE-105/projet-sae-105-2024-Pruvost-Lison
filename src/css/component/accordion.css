@@ -48,14 +48,42 @@
 }
 
 .card__button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
+    display: inline-flex;
+    /* Flexbox pour aligner l'icône et le texte */
+    align-items: center;
+    /* Centre verticalement */
+    height: 40px;
+    /* Hauteur du bouton */
+    border-radius: 20px;
+    /* Coins arrondis */
+    border: 1px solid black;
+    /* Bordure fine */
+    color: black;
+    /* Couleur du texte */
+    text-transform: uppercase;
+    /* Texte en majuscules */
     background-color: white;
-    color: var(--noir);
+    /* Fond blanc */
     text-decoration: none;
-    border-radius: 4px;
+    /* Supprime le soulignement */
+    padding-inline: 20px;
+    /* Espacement interne à gauche et à droite */
+    font-size: 0.9rem;
+    /* Taille du texte */
+    font-weight: bold;
+    /* Gras pour le texte */
+    cursor: pointer;
+    /* Curseur pointer */
+    gap: 10px;
+    /* Espace entre l'icône et le texte */
 }
 
-.card__button:hover {
-    background-color: #0056b3;
+.card__button img {
+    width: 12px;
+    /* Taille de la flèche */
+    height: 12px;
+    /* Hauteur de la flèche */
+    display: inline-block;
+    /* Affiche l'image comme un élément en ligne */
 }
+
