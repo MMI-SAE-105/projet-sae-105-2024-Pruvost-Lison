@@ -48,7 +48,6 @@ ol {
 h2 {
     font-size: 29px;
     text-transform: uppercase;
-    /* color: var(--purple); */
 }
 
 /* Pas de marge ou padding pour le hero */
@@ -91,4 +90,65 @@ img.full-width{
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 15px;
+}
+
+
+
+/* Page autres projets*/
+.projects__list {
+    padding-inline: 35px;
+}
+.project-card {
+    padding: 20px;
+    margin-bottom: 35px;
+    background-color: var(--dark_blue);
+    display: grid;
+    grid-template-rows: 60% 30px 40px;
+    grid-template-columns: 60% 40%;
+}
+
+.project-card__title {
+    color: var(--green);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 ;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.project-card__author {
+    color: white;
+    padding: 0;
+    grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        line-height: 0;
+
+}
+
+.project-card__button {
+    height: 40px;
+    font-size: 13px;
+    line-height: 26px;
+        border-radius: 20px;
+        border: 2px solid white;
+        color: white;
+        text-transform: uppercase;
+        padding-inline: 20px;
+        padding-top: 5px;
+        margin-top: 0;
+        grid-column: 2 / 3;
+            grid-row: 3 / 4;
+}
+
+/* Page glossaire */
+.glossary__term {
+        color: var(--green);
+    }
+
+.glossary__definition {
+        color: white;
+    }
+
+.barre__pixel {
+    height: 72px;
 }

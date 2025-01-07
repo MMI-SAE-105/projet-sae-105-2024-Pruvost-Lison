@@ -44,3 +44,11 @@ z-index: 1;
         }
     }
 }
+
+/* option pour assombrir l'image */
+.darkest-1 {
+    filter: brightness(0.8);
+}
+.darkest-2 {
+    filter: brightness(0.60);
+}
