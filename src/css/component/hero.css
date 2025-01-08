@@ -26,6 +26,7 @@ z-index: 1;
         place-items: center;
         & .bloc-title{
             text-align: center;
+            width: 70%;
         }
         & .hero-button{
         height: 40px;
@@ -33,9 +34,11 @@ z-index: 1;
          border:2px solid white;
          color: white; 
          text-transform: uppercase;
-         padding-inline: 20px;
+         padding-inline: 15px;
          padding-top: 5px;
-         margin-top: 50px;  
+         margin-top: 20px;
+         display: inline-block;
+           
         }
         & img{
             padding-top: 330px;
