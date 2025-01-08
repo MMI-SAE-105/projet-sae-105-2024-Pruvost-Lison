@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 </head>
+
 <body>
     <header class="header">
         <div class="menu">
@@ -20,20 +22,20 @@
                     <img src="/assets/img/nextwear.webp" alt="Logo NextWear">
                 </a>
             </div>
-    
+
             <nav class="header__nav" aria-label="Menu principal">
-                <a href="/en/contacts_en.html" class="header__lang" aria-label="Changer la langue">
+                <a href="/en/contacts.html" class="header__lang" aria-label="Changer la langue">
                     <img src="/assets/img/label-en.svg" alt="EN" width="24" height="24">
                 </a>
             </nav>
-    
+
             <button id="btnmenu" class="menu-toggle" aria-expanded="false" aria-controls="panel"
                 aria-label="Ouvrir le menu">
                 <img src="/assets/img/menu.svg" alt="">
             </button>
         </div>
     </header>
-    
+
     <aside id="panel" class="menu-panel" aria-hidden="true">
         <div class="panel-header">
             <button class="btnclose" id="hide-menu" aria-label="Fermer le menu">
@@ -58,76 +60,81 @@
                     <div class="bloc-hero">
                         <div class="bloc-center">
                             <div class="bloc-title">
-                                <img class="animate__animated animate__fadeIn" src="/assets/img/contacts.svg" alt="contacts"></img>
+                                <img class="animate__animated animate__fadeIn" src="/assets/img/contacts.svg"
+                                    alt="contacts">
                             </div>
                         </div>
-                        <img class="darkest-2" src="/assets/img/hero_contacts.webp" alt="image de metale dans une forme de type colonne vertebrale"></img>
+                        <img class="darkest-2" src="/assets/img/hero_contacts.webp"
+                            alt="image de metale dans une forme de type colonne vertebrale">
                         <h1 class="hidden">Autres Projets</h1>
                     </div>
                 </div>
             </div>
         </section>
 
-    <div class="global-content mx-1">
-        <section class="intro">
-            <h2>Des questions ? Des remarques ? Contactez-nous !</h2>
-            <form class="contact__form" action="#" method="post" aria-label="Formulaire de contact">
-                <div class="contact__field">
-                    <label for="name" class="contact__label">Nom</label>
-                    <input type="text" id="name" name="name" class="contact__input" placeholder="Votre nom" required
-                        aria-required="true">
-                </div>
-        
-                <div class="contact__field">
-                    <label for="firstname" class="contact__label">Prénom</label>
-                    <input type="text" id="firstname" name="firstname" class="contact__input" placeholder="Votre prénom"
-                        required aria-required="true">
-                </div>
-        
-                <div class="contact__field">
-                    <label for="email" class="contact__label">E-mail</label>
-                    <input type="email" id="email" name="email" class="contact__input" placeholder="Votre email" required
-                        aria-required="true">
-                </div>
-        
-                <div class="contact__field">
-                    <label for="message" class="contact__label">Commentaire</label>
-                    <textarea id="message" name="message" class="contact__textarea" placeholder="Votre message" rows="5"
-                        required aria-required="true"></textarea>
-                </div>
-                <button type="submit" class="contact__submit mb-1" aria-label="Envoyer votre message">
-                    Envoyer
-                </button>
-            </form>
-        </section>
-    </div>
+        <div class="global-content mx-1">
+            <section class="intro">
+                <h2>Des questions ? Des remarques ? Contactez-nous !</h2>
+                <form class="contact__form" action="#" method="post" aria-label="Formulaire de contact">
+                    <div class="contact__field">
+                        <label for="name" class="contact__label">Nom</label>
+                        <input type="text" id="name" name="name" class="contact__input" placeholder="Votre nom" required
+                            aria-required="true">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="firstname" class="contact__label">Prénom</label>
+                        <input type="text" id="firstname" name="firstname" class="contact__input"
+                            placeholder="Votre prénom" required aria-required="true">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="email" class="contact__label">E-mail</label>
+                        <input type="email" id="email" name="email" class="contact__input" placeholder="Votre email"
+                            required aria-required="true">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="message" class="contact__label">Commentaire</label>
+                        <textarea id="message" name="message" class="contact__textarea" placeholder="Votre message"
+                            rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="contact__submit mb-1" aria-label="Envoyer votre message">
+                        Envoyer
+                    </button>
+                </form>
+            </section>
+        </div>
     </main>
-<footer class="footer">
-    <div class="footer-pixel"></div>
-    <div class="footer-logo">
-        <img src="/assets/img/nextwear_logo_footer.svg" alt="">
-    </div>
-    <div class="footer-menu">
-        <div class="pa-1">
-            <a href="autres.html">Cela pourrait vous intéresser</a> <br>
-            <a href="contacts.html">Contact</a> <br>
-            <small>lison.pruvost@edu.univ-fcomte.fr</small> <br>
-            <a href="glossaire.html">Glossaire</a> <br>
-            <a href="#">Mentions Légales</a> <br>
-            <small>©Projet réalisé en 2024 dans le cadre d’un exercice
-                pédagogique au département MMi de Montbéliard</small>
+    <footer class="footer">
+        <div class="footer-pixel"></div>
+        <div class="footer-logo">
+            <img loading="lazy" src="/assets/img/nextwear_logo_footer.svg" alt="">
         </div>
-    </div>
-    <div class="footer-social">
-        <h4>NOUS SUIVRE</h4>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/"><img src="/assets/img/instagram.svg" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/lison-pruvost-1b6b41328/"><img src="/assets/img/linkedin.svg"
-                    alt="linkedin"></a>
-            <a href="https://www.facebook.com/"><img src="/assets/img/facebook.svg" alt="Facebook"></a>
+        <div class="footer-menu">
+            <div class="pa-1">
+                <a href="autres.html">Cela pourrait vous intéresser</a> <br>
+                <a href="contacts.html">Contact</a> <br>
+                <small>lison.pruvost@edu.univ-fcomte.fr</small> <br>
+                <a href="glossaire.html">Glossaire</a> <br>
+                <a href="#">Mentions Légales</a> <br>
+                <small>©Projet réalisé en 2024 dans le cadre d’un exercice
+                    pédagogique au département MMi de Montbéliard</small>
+            </div>
         </div>
-    </div>
-</footer>
-<script src="/src/js/app.js"> </script>
+        <div class="footer-social">
+            <h4>NOUS SUIVRE</h4>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/"><img loading="lazy" src="/assets/img/instagram.svg"
+                        alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/lison-pruvost-1b6b41328/"><img loading="lazy"
+                        src="/assets/img/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.facebook.com/"><img loading="lazy" src="/assets/img/facebook.svg"
+                        alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/src/js/app.js"> </script>
 </body>
+
 </html>
