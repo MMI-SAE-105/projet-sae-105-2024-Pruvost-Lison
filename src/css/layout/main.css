@@ -71,9 +71,7 @@ small:not(.footer small) {
     margin: 10px auto;
     width: fit-content;
 }
-/* body {
-    padding-bottom: 50px;
-    /* Ajoute 50px d'espace en bas */
+
 
 .card.decal{
     padding: 0 0 100px 0;
