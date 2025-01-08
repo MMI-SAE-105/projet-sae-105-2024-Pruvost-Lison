@@ -18,6 +18,7 @@
 @import url("../component/accordion.css");
 @import url("../component/contact.css");
 @import url("../component/timeline.css");
+@import url("../component/404.css");
 
 
 /* importation */
@@ -110,3 +111,4 @@ p {
 .hidden {
     display: none;
 }
+

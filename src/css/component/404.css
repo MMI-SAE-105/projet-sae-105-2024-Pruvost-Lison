@@ -1,0 +1,28 @@
+.main--error {
+    background-color: var(--dark_blue);
+}
+
+.error {
+    color: var(--green);
+    align-content: center;
+    width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.error a {
+    color: var(--green);
+    font-size: 15px;
+        border-radius: 20px;
+        border: 2px solid var(--green);
+        color: var(--green);
+        text-transform: uppercase;
+        padding: 10px 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        display: inline-block;
+        white-space: nowrap;
+}
