@@ -1,11 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>filmography</title>
+    <link rel="stylesheet" href="/src/css/vendors/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png" sizes="96x96" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" /> -->
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="menu">
+            <div class="logo">
+                <a href="/en/index.html">
+                    <img src="/assets/img/nextwear.webp" alt="Logo NextWear">
+                </a>
+            </div>
+
+            <nav class="header__nav" aria-label="Menu principal">
+                <a href="/en/filmography.html" class="header__lang" aria-label="Change language">
+                    <img src="/assets/img/label-fr.svg" alt="FR" width="24" height="24">
+                </a>
+            </nav>
+
+            <button id="btnmenu" class="menu-toggle" aria-expanded="false" aria-controls="panel" aria-label="Open menu">
+                <img src="/assets/img/menu.svg" alt="">
+            </button>
+        </div>
+    </header>
+    <aside id="panel" class="menu-panel" aria-hidden="true">
+        <div class="panel-header">
+            <button class="btnclose" id="hide-menu" aria-label="Close menu">
+                <img src="/assets/img/close_square.svg" alt="">
+            </button>
+        </div>
+        <nav role="navigation" class="menu-panel__nav">
+            <ul>
+                <li><a href="filmography.html">Filmography</a></li>
+                <li><a href="/en/evolution.html">Evolution</a></li>
+                <li><a href="/en/robert_zemeckis.html">Robert Zemeckis</a></li>
+                <li><a href="/en/techno_fashion.html">Techno Fashion</a></li>
+                <li><a href="/en/xg_grlgvng.html">XG-Grl-Gvng</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section class="">
+            <div class="">
+                <div class="bloc-hero">
+                    <div class="bloc-center">
+                        <div class="bloc-title">
+                            <img class="animate__animated animate__fadeIn" src="/assets/img/filmographie.svg"
+                                alt="filmography">
+                        </div>
+                    </div>
+                    <img class="darkest-1" src="/assets/img/hero_filmographie.webp"
+                        alt="doloriane from back to the future">
+                    <h1 class="hidden">Filmography back to the future and correler films</h1>
+                </div>
+            </div>
+        </section>
+        <div class="global-content">
+            <section class="intro">
+                <h2>BACK TO THE FUTURE 2 :
+                    PROJECTING INTO THE FUTURE</h2>
+                <small>Written on October 17, 2024<br>Reading time 8 min</small>
+                <p>Back to the Future 2”, released in 1989, presented an innovative vision of 2015, captivating
+                    audiences
+                    with its flying cars
+                    hoverboards and memorably futuristic outfits.</p>
+                <p>Robert Zemeckis and his team have created a unique aesthetic, blending the exuberance of the 80s with
+                    their predictions
+                    of the future.
+                    their predictions of
+                    trends of tomorrow.
+                    Marty McFly's iconic outfit is a perfect illustration of this vision.</p>
+                <div class="button-arrow ">
+                    <a href="robert_zemeckis.html" class="button">Discover more about Zemeckis</a>
+                </div>
+            </section>
+            <section>
+                <h3 class="mt-2">The self-adjusting jacket</h3>
+                <p>The self-adjusting jacket adapts to your body shape, combining functionality and style in a way that
+                    seems less
+                    unusual in today's age of intelligent fabrics. The jacket's ability to dry
+                    dry instantly adds a
+                    whimsical touch that reflects the film's optimism about technological progress.</p>
+
+                <!-- swiper -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img loading="lazy" class="portrait"
+                                src="/assets/img/carou_marty.webp" alt=""></div>
+                        <div class="swiper-slide"><img loading="lazy" class="portrait"
+                                src="/assets/img/carou_veste.webp" alt=""></div>
+                        <div class="swiper-slide"><img loading="lazy" class="portrait"
+                                src="/assets/img/carou_marty_deux.webp" alt=""></div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- swiper -->
+            </section>
+            <section>
+                <h3>The Nike Air Mag</h3>
+                <p>The most striking item in Marty's wardrobe is undoubtedly his pair of Nike lace-up sneakers.
+                    trainers. These
+                    captured the imagination of spectators and sneaker enthusiasts alike. The concept was
+                    so convincing that
+                    Nike ended up creating a real-life version in 2016 turning science fiction into reality.</p>
+                <!-- swiper -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img loading="lazy" class="portrait"
+                                src="/assets/img/carou_voiture.webp" alt=""></div>
+                        <div class="swiper-slide"><img loading="lazy" class="portrait"
+                                src="/assets/img/carou_chaussure.webp" alt=""></div>
+                        <div class="swiper-slide"><img loading="lazy" src="/assets/img/gif_marthy.gif" alt=""></div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- swiper -->
+                <p>The McFly family's outfits in the future timeline offer a broader view of the
+                    predictions
+                    the film's sartorial predictions. Marty Jr. and Marlene wear brightly colored ensembles, reflecting
+                    the
+                    exaggerated vision of
+                    vision of future styles. Their clothes mix patterns, textures and electronic components,
+                    suggesting a world
+                    where fashion and technology are inseparable.</p>
+                <section>
+                    <h3 class="mt-2">The secondary characters</h3>
+                    <p>Even the secondary characters contribute to the film's sartorial universe. Griff and his gang
+                        wear metallic outfits
+                        that seem to draw on both punk aesthetics and industrial design.
+                        Their clothes evoke a future
+                        future where fashion serves both as personal expression and protection against an uncertain
+                        world.</p>
+                    <img loading="lazy" src="/assets/img/perso_secondaire.webp"
+                        alt="three back-to-the-future characters, two garcos, one girl">
+                    <small>Film extract</small>
+                    <p>Costume design goes beyond clothing, encompassing accessories and hairstyles. The
+                        characters sport unusual
+                        unusual hairstyles, holographic headgear and even bionic implants,
+                        depicting a society where the
+                        between fashion and body modification.</p>
+                    <p>While some of the film's sartorial predictions may seem extravagant today,
+                        others that turned out to be
+                        relevant. The film's costume themes reflect technology in fashion, retro-futuristic
+                        retro-futuristic style and
+                        personalization of clothing.</p>
+                    <p class="mb-2">“Back to the Future 2” may not have accurately predicted every aspect of
+                        fashion of 2015, but its bold vision
+                        continues to inspire designers and futurists alike. The film's costume design
+                        serves as a time capsule
+                        time capsule of the 80s' hopes and fears for the future, offering a free
+                        audience's interpretation
+                        over the years.</p>
+                </section>
+                <section>
+                    <h3>See the trailer:</h3>
+                    <div class="gallery__item">
+                        <video controls poster="/assets/img/card_retour_vers_le_futur.webp"
+                            src="https://lison-pruvost.fr/videos/retour_vers_le_future_fr.mp4">
+                        </video>
+                    </div>
+                </section>
+            </section>
+            <section class="film-gallery">
+                <h2 class="film-gallery__title mt-2">Correlated films: when universes complement each other</h2>
+
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <h3 class="accordion__header">Blade Runner (1982)</h3>
+                        <div class="accordion__content">
+                            <div class="card">
+                                <img loading="lazy" class="card__image" src="/assets/img/affiche_blade_runner.webp"
+                                    alt="Poster blade runner 1982">
+                                <small class="card__caption">Film poster (September 15, 1982)</small>
+                                <p class="card__description">
+                                    This film presents a neo-noir fashion where trench coats and leather garments define
+                                    a dystopian
+                                    dystopian future. The characters' outfits, mixing retro and futurism. The clothing
+                                    reflect a
+                                    dystopian society, where fashion oscillates between the functional and the
+                                    eccentric,
+                                    anticipating
+                                    techwear trends.
+                                </p>
+                                <a class="card__button button button--arrow"
+                                    href="https://youtu.be/FNbj4-lqHZw?si=pi2R4lWH3ei1PhHj">watch the trailer on
+                                    youtube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <h3 class="accordion__header">Blade Runner 2049 (2017)</h3>
+                        <div class="accordion__content">
+                            <div class="card">
+                                <img loading="lazy" class="card__image"
+                                    src="/assets/img/affiche_blade_runner_recent.webp" alt="Poster blade runner 2049">
+                                <small class="card__caption">Movie poster (October 4, 2017)</small>
+                                <p class="card__description">
+                                    The sequel updates the aesthetic of the first film with refined, minimalist
+                                    costumes.
+                                    minimalist costumes. K and Joi's
+                                    K and Joi's outfits combine technology and elegance, reflecting a natural
+                                    natural evolution of the
+                                    futuristic style. Reflecting the technological advances and social changes of the
+                                    world.
+                                </p>
+                                <a class="card__button button button--arrow"
+                                    href="https://youtu.be/O4C5cwSbXZ8?si=DYP1f6tsQIpYMNP5">watch the trailer on
+                                    youtube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <h3 class="accordion__header">The Fifth Element (1997)</h3>
+                        <div class="accordion__content">
+                            <div class="card">
+                                <img loading="lazy" class="card__image" src="/assets/img/affiche_elements.webp"
+                                    alt="Poster le 5ème élément">
+                                <small class="card__caption">Movie poster (May 7, 1997)</small>
+                                <p class="card__description">
+                                    Jean-Paul Gaultier's daring costumes offer a flamboyant vision of the future.Bright
+                                    colors and extravagant silhouettes turn each character into a work of art.
+                                    work
+                                    creating a vision of 23rd-century fashion that continues to inspireand
+                                    designers and creators.
+                                </p>
+                                <a class="card__button button button--arrow"
+                                    href="https://youtu.be/7rzmiE-pESk?si=ejiUodXlMG-NLh-w">watch the trailer on
+                                    youtube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <h3 class="accordion__header">Alita: Battle Angel (2019)</h3>
+                        <div class="accordion__content">
+                            <div class="card">
+                                <img loading="lazy" class="card__image" src="/assets/img/affiche_alita.webp"
+                                    alt="Poster film affiche alita">
+                                <small class="card__caption">Movie poster (February 14, 2019)</small>
+                                <p class="card__description">
+                                    Alita's clothes, designed to adapt to her cyborg body, illustrate the
+                                    encounter between
+                                    humanity and technology. The outfits reflect a world where fashion and
+                                    human augmentation
+                                    come together. While the clothes of Iron City's inhabitants reflect a
+                                    post-apocalyptic world
+                                    post-apocalyptic world where fashion is both functional and expressive, anticipating
+                                    the evolution
+                                    of techwear and adaptive fashion.
+                                </p>
+                                <a class="card__button button button--arrow"
+                                    href="https://youtu.be/75QXYNz5Q8o?si=QmIu8JdD50yLjW_s">watch the trailer on
+                                    youtube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <h3 class="accordion__header">Dune (2021)</h3>
+                        <div class="accordion__content">
+                            <div class="card">
+                                <img loading="lazy" class="card__image" src="/assets/img/affiche_dune.webp"
+                                    alt="Poster film dune">
+                                <small class="card__caption">Film poster (September 15, 2021)</small>
+                                <p class="card__description">
+                                    Jacqueline West's costumes combine functionality and aesthetics. The outfits of
+                                    Atreides and
+                                    Fremen are designed to withstand extreme conditions while remaining
+                                    elegant. This
+                                    sober approach to futuristic fashion contrasts with more flamboyant visions,
+                                    suggesting an
+                                    sustainability and efficiency.
+                                </p>
+                                <a class="card__button button button--arrow"
+                                    href="https://youtu.be/7rzmiE-pESk?si=ejiUodXlMG-NLh-w">watch the trailer on
+                                    youtube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <h3 class="accordion__header">Ghost in the Shell (2017)</h3>
+                        <div class="accordion__content">
+                            <div class="card">
+                                <img loading="lazy" class="card__image"
+                                    src="/assets/img/affiche_ghost_in_the_shell.webp" alt="Poster ghost in the shell">
+                                <small class="card__caption">Movie poster (March 29, 2017)</small>
+                                <p class="card__description">
+                                    This live-action adaptation features costumes where clothes and augmentations
+                                    cybernetic augmentations
+                                    blend together. Futuristic outfits highlight a society where fashion and technology
+                                    are
+                                    inseparable. Futuristic urban outfits reflect a society where the boundary
+                                    between fashion
+                                    and technology, anticipating current developments in wearable tech.
+                                    wearable tech.
+                                </p>
+                                <a class="card__button button button--arrow"
+                                    href="https://youtu.be/AQipnFp8Yxs?si=UHDVzjivGswqxW9C">watch the trailer on
+                                    youtube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="button-arrow mb-1 mx-1">
+                <a href="evolution.html" class="button">→ Go to the evolution page</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-pixel"></div>
+        <div class="footer-logo">
+            <img loading="lazy" src="/assets/img/nextwear_logo_footer.svg" alt="">
+        </div>
+        <div class="footer-menu">
+            <div class="pa-1">
+                <a href="others.html">You may also be interested in</a> <br>
+                <a href="/en/contacts.html">Contact</a> <br>
+                <small>lison.pruvost@edu.univ-fcomte.fr</small> <br>
+                <a href="glossary.html">Glossary</a> <br>
+                <a href="#">Terms & Conditions</a> <br>
+                <small>Project carried out in 2024 as part of an educational exercise
+                    at the MMi department in Montbéliard</small>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h4>FOLLOW US</h4>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/"><img loading="lazy" src="/assets/img/instagram.svg"
+                        alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/lison-pruvost-1b6b41328/"><img loading="lazy"
+                        src="/assets/img/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.facebook.com/"><img loading="lazy" src="/assets/img/facebook.svg"
+                        alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/src/js/app.js"> </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
+
 </html>

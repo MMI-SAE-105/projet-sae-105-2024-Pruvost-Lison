@@ -1,17 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link rel="stylesheet" href="src/css/vendors/style.css">
+    <title>accueil</title>
+    <link rel="stylesheet" href="/src/css/vendors/style.css">
     <link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" /> -->
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/assets/img/nextwear.webp" alt="Logo NextWear">
+                </a>
+            </div>
+            <nav class="header__nav" aria-label="Menu principal">
+                <a href="/en/index.html" class="header__lang" aria-label="Change language">
+                    <img src="/assets/img/label-fr.svg" alt="FR" width="24" height="24">
+                </a>
+            </nav>
+            <button id="btnmenu" class="menu-toggle" aria-expanded="false" aria-controls="panel" aria-label="Open menu">
+                <img src="/assets/img/menu.svg" alt="">
+            </button>
+        </div>
+    </header>
+
+    <aside id="panel" class="menu-panel" aria-hidden="true">
+        <div class="panel-header">
+            <button class="btnclose" id="hide-menu" aria-label="Close menu">
+                <img src="/assets/img/close_square.svg" alt="">
+            </button>
+        </div>
+        <nav role="navigation" class="menu-panel__nav">
+            <ul>
+                <li><a href="filmography.html">Filmography</a></li>
+                <li><a href="/en/evolution.html">Evolution</a></li>
+                <li><a href="/en/robert_zemeckis.html">Robert Zemeckis</a></li>
+                <li><a href="/en/techno_fashion.html">Techno Fashion</a></li>
+                <li><a href="/en/xg_grlgvng.html">XG-Grl-Gvng</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section class="">
+            <div class="">
+                <div class="bloc-hero">
+                    <div class="bloc-center">
+                        <div class="bloc-title">
+                            <img src="/assets/img/nextwear.svg" alt="titre du site">
+                            <button id="/en/a_propos.html" class="hero-button">Discover more</button>
+                        </div>
+                    </div>
+                    <img src="/assets/img/gif_header.gif" alt="outfits on the runway">
+                    <h1 class="hidden">NextWear</h1>
+                </div>
+
+            </div>
+        </section>
+        <div class="global-content">
+            <section class="intro mb-2 pb-2 mt-2">
+                <p>Welcome to the fashion of the future, where innovation and style meet. Here..,
+                    we focus on
+                    techwear, an avant-garde trend that blends functionality and aesthetics, redefining
+                    redefining our relationship with
+                    clothing. Imagine a world where your outfits are no longer just clothes, but digital avatars
+                    avatars that
+                    that adapt to your daily needs.</p>
+
+            </section>
+            <section>
+                <div class="card decal">
+                    <div class="bg-bleu to-right pt-3 pb-3 mt-3">
+                        <h2 class="negatif my-0">Discover fashion as you've never seen it before</h2>
+                    </div>
+                    <img loading="lazy" src="/assets/img/card_evolution.webp"
+                        alt="3D outfit of a gray and purple dress">
+                    <p class="bg-bleu mt-0 to-left">Escape to a future where fashion transcends the physical. In
+                        2079, faced with a degraded environment, humanity
+                        entirely digital fashion. Discover a world where avatars replace bodies, where virtual
+                        virtual clothes
+                        adapt in real time, and where creativity knows no bounds.
+                    </p>
+                    <span class="bg-bleu px-1 pb-0">
+                        <a href="evolution.html" class="button">View more</a>
+                    </span>
+                </div>
+                <div class="card decal">
+                    <div class="bg-bleu to-right pt-3 pb-3 mt-2">
+                        <h2 class="negatif my-0">Back to the Future, the visionary film</h2>
+                    </div>
+                    <img loading="lazy" src="/assets/img/card_retour_vers_le_futur.webp"
+                        alt="doloriane du filme back to the future">
+                    <p class="bg-bleu mt-0 to-left">Dive into the world of “Back to the Future 2”, where futuristic
+                        fashion
+                        where futuristic fashion meets bold aesthetics. Discover
+                        how Marty McFly's iconic outfits, from self-adjusting clothes to self-tying sneakers
+                        to self-lacing sneakers
+                        prefigured our current relationship with technology and fashion.
+                    </p>
+                    <span class="bg-bleu px-1 pb-0">
+                        <a href="filmographie.html" class="button">View more</a>
+                    </span>
+                </div>
+
+                <div class="card decal">
+                    <div class="bg-bleu to-right pt-3 pb-3 mt-2">
+                        <h2 class="negatif my-0">music that immerses you in the future</h2>
+                    </div>
+                    <img loading="lazy" src="/assets/img/card_xg.webp" alt="woman dressed in white with pink hair">
+                    <p class="bg-bleu mt-0 to-left">Explore the futuristic world of XG with “GRL GVNG”. Discover
+                        how this revolutionary group fuses avant-garde
+                        music and high-tech fashion. From AI-generated costumes to breathtaking virtual
+                        virtual sets, explore a visual
+                        visual and aural experience that pushes the boundaries of creativity.
+                    </p>
+                    <span class="bg-bleu px-1 pb-0">
+                        <a href="xg_grlgvng.html" class="button">View more</a>
+                    </span>
+                </div>
+                <div class="card decal">
+                    <div class="bg-bleu to-right pt-3 pb-3 mt-2">
+                        <h2 class="negatif my-0">The book that merges art and technology</h2>
+                    </div>
+                    <img loading="lazy" src="/assets/img/card_livre.webp"
+                        alt="woman in ear-to-ear white roll-on glue with black hair">
+                    <p class="bg-bleu mt-0 to-left">Discover the future of fashion with “Techno Fashion” by Bradley
+                        Quinn. A world where clothes become intelligent,
+                        interactive and alive. From color-changing fabrics to electronic textiles, explore
+                        how technology
+                        revolutionizes our relationship with clothing.
+                    </p>
+                    <span class="bg-bleu px-1 pb-0">
+                        <a href="techno_fashion.html" class="button">View more</a>
+                    </span>
+                </div>
+                <div class="card decal">
+                    <div class="bg-bleu to-right pt-3 pb-3 mt-2">
+                        <h2 class="negatif my-0">The trend-setting cinema visionary</h2>
+                    </div>
+                    <img loading="lazy" src="/assets/img/card_zemeckis.webp"
+                        alt="black and white photo by Robert Zemeckis">
+                    <p class="bg-bleu mt-0 to-left">Dive into a future where fashion transcends the physical. The year
+                        is 2079,
+                        faced with a degraded environment, mankind adopts an entirely
+                        entirely digital fashion. Discover a world where avatars replace bodies, where virtual
+                        virtual clothes adapt
+                        in real time, and where creativity knows no bounds.
+                    </p>
+                    <span class="bg-bleu px-1 pb-0">
+                        <a href="techno_fashion.html" class="button">View more</a>
+                    </span>
+                </div>
+
+            </section>
+            <div class="button-arrow mb-1 mx-1">
+                <a href="filmographie.html" class="button">→ Go to the filmography page</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-pixel"></div>
+        <div class="footer-logo">
+            <img loading="lazy" src="/assets/img/nextwear_logo_footer.svg" alt="">
+        </div>
+        <div class="footer-menu">
+            <div class="pa-1">
+                <a href="others.html">You may also be interested in</a> <br>
+                <a href="/en/contacts.html">Contact</a> <br>
+                <small>lison.pruvost@edu.univ-fcomte.fr</small> <br>
+                <a href="glossary.html">Glossary</a> <br>
+                <a href="#">Terms & Conditions</a> <br>
+                <small>Project carried out in 2024 as part of an educational exercise
+                    at the MMi department in Montbéliard</small>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h4>FOLLOW US</h4>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/"><img loading="lazy" src="/assets/img/instagram.svg"
+                        alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/lison-pruvost-1b6b41328/"><img loading="lazy"
+                        src="/assets/img/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.facebook.com/"><img loading="lazy" src="/assets/img/facebook.svg"
+                        alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/src/js/app.js"> </script>
 </body>
+
 </html>

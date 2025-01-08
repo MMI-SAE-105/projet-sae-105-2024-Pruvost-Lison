@@ -1,17 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-        <link rel="stylesheet" href="src/css/vendors/style.css">
-        <link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-        <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <title>a propos</title>
+    <link rel="stylesheet" href="/src/css/vendors/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png" sizes="96x96" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" /> -->
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="menu">
+            <div class="logo">
+                <a href="/en/index.html">
+                    <img src="/assets/img/nextwear.webp" alt="Logo NextWear">
+                </a>
+            </div>
+
+            <nav class="header__nav" aria-label="Menu principal">
+                <a href="/en/about.html" class="header__lang" aria-label="Change language">
+                    <img src="/assets/img/label-fr.svg" alt="FR" width="24" height="24">
+                </a>
+            </nav>
+
+            <button id="btnmenu" class="menu-toggle" aria-expanded="false" aria-controls="panel" aria-label="Open menu">
+                <img src="/assets/img/menu.svg" alt="">
+            </button>
+        </div>
+    </header>
+
+    <aside id="panel" class="menu-panel" aria-hidden="true">
+        <div class="panel-header">
+            <button class="btnclose" id="hide-menu" aria-label="Close menu">
+                <img src="/assets/img/close_square.svg" alt="">
+            </button>
+        </div>
+        <nav role="navigation" class="menu-panel__nav">
+            <ul>
+                <li><a href="filmography.html">Filmography</a></li>
+                <li><a href="/en/evolution.html">Evolution</a></li>
+                <li><a href="/en/robert_zemeckis.html">Robert Zemeckis</a></li>
+                <li><a href="/en/techno_fashion.html">Techno Fashion</a></li>
+                <li><a href="/en/xg_grlgvng.html">XG-Grl-Gvng</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section class="">
+            <div class="">
+                <div class="bloc-hero">
+                    <div class="bloc-center">
+                        <div class="bloc-title">
+                            <img class="animate__animated animate__fadeIn" src="/assets/img/a_propos.svg" alt="about">
+                        </div>
+                    </div>
+                    <img class="darkest-2" src="/assets/img/hero_a_propos.webp" alt="metal image in a spine-like shape">
+                    <h1 class="hidden">About</h1>
+                </div>
+            </div>
+        </section>
+        <section class="intro">
+            <h2 class="pb-0 mb-0">Curious to explore our universe?</h2>
+            <img loading="lazy" class="img-responsive mt-0 pt-0" src="/assets/img/carte_a_propos.svg" alt="badge">
+        </section>
+        <section>
+            <h3>Presentation</h3>
+            <p>My name is Lison, I am a student in BUT MMI (Multimedia and Internet Professions) at the University
+
+                of Belfort-Montbéliard in Montbéliard. This website is a project called "NextWear", around the subject
+
+                “prehistory of the future”.
+
+                My goal is therefore rather a concept. The theme of fashion allows to offer a futuristic vision with
+
+                techwear and to offer original and innovative content to all the people who like fashion content.</p>
+        </section>
+        <section>
+            <h3>The initial project</h3>
+            <p>The "Prehistory of the Future" project aims to create a mobile-first website that explores the
+                convergence between
+                the past and/or
+                our perception of the future. Through a series of articles, the site presents objects, films,
+                books and music that illustrate how our current innovations could be interpreted by
+                future generations. This project invites us to reflect on our impact on the future while offering an
+                interactive and
+                immersive experience.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-pixel"></div>
+        <div class="footer-logo">
+            <img loading="lazy" src="/assets/img/nextwear_logo_footer.svg" alt="">
+        </div>
+        <div class="footer-menu">
+            <div class="pa-1">
+                <div class="pa-1">
+                    <a href="others.html">You may also be interested in</a> <br>
+                    <a href="/en/contacts.html">Contact</a> <br>
+                    <small>lison.pruvost@edu.univ-fcomte.fr</small> <br>
+                    <a href="glossary.html">Glossary</a> <br>
+                    <a href="#">Terms & Conditions</a> <br>
+                    <small>Project carried out in 2024 as part of an educational exercise
+                        at the MMi department in Montbéliard</small>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><img loading="lazy" src="/assets/img/instagram.svg"
+                            alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/lison-pruvost-1b6b41328/"><img loading="lazy"
+                            src="/assets/img/linkedin.svg" alt="linkedin"></a>
+                    <a href="https://www.facebook.com/"><img loading="lazy" src="/assets/img/facebook.svg"
+                            alt="Facebook"></a>
+                </div>
+            </div>
+    </footer>
+    <script src="/src/js/app.js"> </script>
 </body>
+
 </html>
