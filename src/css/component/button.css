@@ -1,0 +1,13 @@
+.button-arrow {
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid var(--black);
+    color: var(--black);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    display: inline-block;
+    white-space: nowrap;
+}
