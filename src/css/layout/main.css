@@ -62,6 +62,7 @@ h2 {
     width: 100%;
     height: auto;
     margin: 0 20px;
+    overflow: hidden;
 }
 
 small:not(.footer small) {
